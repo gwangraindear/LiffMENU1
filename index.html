@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF app</title>
-  <link rel="stylesheet" href="css/style.css" media="all">
+  <!--<link rel="stylesheet" href="css/style.css" media="all">-->
+  <script>
+    document.write('<link rel="stylesheet" href="css/style.css?cache=' + new Date().getTime() +'">')
+  </script>
 </head>
 <body>
   <p id="os"><b>OS:</b> </p>
@@ -42,7 +45,7 @@
     console.log("Hello World!")
   </script> -->
 
-  <!-- <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script> -->
+  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function createUniversalLink() {
     }
@@ -51,9 +54,12 @@
     }
 
     function logOut() {
+      liff.logout()
+      window.location.reload()
     }
 
     function closed() {
+      liff.closeWindow()
     }
 
     async function scanCode() {
@@ -66,10 +72,28 @@
     }
 
     async function sendMsg() {
+      if (liff.getContext().type !== "none") {
+        await liff.sendMessages([
+          {
+            "type": "sticker",
+            "stickerId": 1,
+            "packageId": 1
+          }
+        ])
+        alert("Message sent")
+      }
     }
 
     function getContext() {
+      if (liff.getContext() != null) {
+        document.getElementById("type").append(liff.getContext().type)
+        document.getElementById("viewType").append(liff.getContext().viewType)
+        document.getElementById("utouId").append(liff.getContext().utouId)
+        document.getElementById("roomId").append(liff.getContext().roomId)
+        document.getElementById("groupId").append(liff.getContext().groupId)
+      }
     }
+
 
     async function getUserProfile() {
     }
@@ -78,13 +102,14 @@
     }
 
     async function main() {
-      alert("LINE Developers x Skooldio")
-      await liff.init({ liffId: "YOUR-LIFF-ID" })
-      // getEnvironment()
-      // getUserProfile()
-      // getContext()
-      // getFriendship()
-      // createUniversalLink()
+      await liff.init({ liffId: "1654167548-NvyrPjaE" })
+        document.getElementById("isLoggedIn").append(liff.isLoggedIn())
+        if (liff.isLoggedIn()) {
+          getContext()
+        } else {
+          liff.login()
+        }
+      
     }
     main()
   </script>
