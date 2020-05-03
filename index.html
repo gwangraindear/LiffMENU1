@@ -26,11 +26,31 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       {
-         //start
         
-      "type": "sticker",
+        alert("Message sent")   
+        /*"type": "sticker",
       "stickerId": 1,
-      "packageId": 1
+      "packageId": 1*/
+         //start     
+           
+           "type": "flex",
+      "altText": "This is a Flex Message",
+      "contents": { "type": "bubble",
+                    "body": {
+                               "type": "box",
+                               "layout": "horizontal",
+                               "contents": [
+                                          {
+                                            "type": "text",
+                                            "text": "Hello,"
+                                          },
+                                          {
+                                            "type": "text",
+                                            "text": "World!"
+                                          }
+                                            ]
+                            }
+                  }
         //End
       }
         ])
