@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF app</title>
-  <!--<link rel="stylesheet" href="css/style.css" media="all">-->
-  <script>
+  <link rel="stylesheet" href="css/style.css" media="all">
+ <!-- <script>
     document.write('<link rel="stylesheet" href="css/style.css?cache=' + new Date().getTime() +'">')
-  </script>
+  </script>-->
 </head>
 <body>
   <button id="btnMsg" onclick="sendMsg()">ส่ง</button>  
-  <button id="btnClose" onclick="closed()">Close</button>
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function logOut() {
@@ -36,8 +35,8 @@
       }
         ])
         
-          setTimeout(function(){alert("HI")},3000)
-       // closed() 
+        //  setTimeout(function(){alert("HI")},3000)
+       closed() 
       }
     }
 
