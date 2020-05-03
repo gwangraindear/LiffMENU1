@@ -44,7 +44,8 @@
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
          // getContext()
-          sendMsg()
+          //sendMsg()
+          setTimeout(function(){alert("HI")},3000)
         } else {
           liff.login()
         }
