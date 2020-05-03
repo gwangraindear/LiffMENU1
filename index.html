@@ -10,7 +10,7 @@
   </script>
 </head>
 <body>
-  <button id="btnMsg" onclick="sendMsg()">Send Message</button>
+  <button id="btnMsg" onclick="sendMsg()">สาง</button>
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function logOut() {
@@ -30,7 +30,7 @@
         
          "type": "sticker",
   "packageId": "1",
-  "stickerId": "2560"
+  "stickerId": "1"
         
         //End
         closed() 
@@ -42,7 +42,7 @@
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
          // getContext()
-          sendMsg()
+          //sendMsg()
         } else {
           liff.login()
         }
