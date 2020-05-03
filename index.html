@@ -26,46 +26,13 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       {
-    "type": "carousel",
-    "actions": [],
-    "columns": [
-      {
-        "thumbnailImageUrl": "./1.jpg",
-        "title": "Title",
-        "text": "Text",
-        "actions": [
-          {
-            "type": "message",
-            "label": "Action 1",
-            "text": "Action 1"
-          },
-          {
-            "type": "message",
-            "label": "Action 2",
-            "text": "Action 2"
-          }
-        ]
-      },
-      {
-        "thumbnailImageUrl": "./2.jpg",
-        "title": "Title",
-        "text": "Text",
-        "actions": [
-          {
-            "type": "message",
-            "label": "Action 1",
-            "text": "Action 1"
-          },
-          {
-            "type": "message",
-            "label": "Action 2",
-            "text": "Action 2"
-          }
-        ]
-      }
-    ]
-  }
-        ])
+         //start
+        
+         "type": "sticker",
+  "packageId": "1",
+  "stickerId": "2560"
+        
+        //End
         closed() 
       }
     }
@@ -75,6 +42,7 @@
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
          // getContext()
+          sendMsg()
         } else {
           liff.login()
         }
