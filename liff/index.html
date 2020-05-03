@@ -99,15 +99,14 @@
     }
 
     async function main() {
-      liff.ready.then(() => {
+      await liff.init({ liffId: "1654167548-NvyrPjaE" })
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
           getContext()
         } else {
           liff.login()
         }
-      })
-      await liff.init({ liffId: "1654167548-NvyrPjaE" })
+      
     }
     main()
   </script>
