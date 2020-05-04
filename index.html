@@ -10,15 +10,10 @@
   </script>-->
 </head>
 <body>
-  <button id="btnMsg" onclick="sendMsg()">ส่ง..</button>  
+  <!--<button id="btnMsg" onclick="sendMsg()">ส่ง..</button>  -->
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
-    function logOut() {
-      liff.logout()
-      window.location.reload()
-    }
-
-    function closed() {
+   function closed() {
       liff.closeWindow()
     }
 
@@ -651,7 +646,7 @@
         if (liff.isLoggedIn()) {
          // getContext()
          // alert("is log in")
-          setTimeout(sendMsg(),3000)
+          setTimeout(sendMsg(),1000)
           
         } else {
           liff.login()
