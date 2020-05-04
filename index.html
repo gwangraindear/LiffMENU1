@@ -10,7 +10,7 @@
   </script>-->
 </head>
 <body>
-  <button id="btnMsg" onclick="sendMsg()">ส่ง..</button>  
+  <button id="btnMsg" onclick="sendMsg()">ส่ง</button>  
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function logOut() {
@@ -27,97 +27,12 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       // start flex
-{
+          {
   "type": "flex",
   "altText": "Flex Message",
   "contents": {
     "type": "carousel",
     "contents": [
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://static.wixstatic.com/media/e5c721_577f331663394ee0a28f45321230d032~mv2.jpg",
-          "size": "full",
-          "aspectRatio": "1:1",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "md",
-          "contents": [
-            {
-              "type": "text",
-              "text": "ชีสเค้กญี่ปุ่น",
-              "size": "xl",
-              "weight": "bold"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "icon",
-                      "url": "https://gwangraindear.github.io/LiffMENU1/img/size-s.png"
-                    },
-                    {
-                      "type": "text",
-                      "text": "฿100",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "ครึ่งปอนด์",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                },
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "icon",
-                      "url": "https://gwangraindear.github.io/LiffMENU1/img/size-m.png"
-                    },
-                    {
-                      "type": "text",
-                      "text": "฿190",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "1 ปอนด์",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
-              "size": "xxs",
-              "color": "#AAAAAA",
-              "wrap": true
-            }
-          ]
-        }
-      },
       {
         "type": "bubble",
         "hero": {
