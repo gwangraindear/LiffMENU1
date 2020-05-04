@@ -27,12 +27,82 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       // start flex
-{
+          {
   "type": "flex",
   "altText": "Flex Message",
   "contents": {
     "type": "carousel",
     "contents": [
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://static.wixstatic.com/media/e5c721_aa4c0873eeea46af94b4b7bf302464e9~mv2.jpg",
+          "size": "full",
+          "aspectRatio": "1:1",
+          "aspectMode": "cover",
+          "action": {
+            "type": "uri",
+            "label": "Action",
+            "uri": "https://linecorp.com"
+          }
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "md",
+          "contents": [
+            {
+              "type": "text",
+              "text": "'ปังหยา",
+              "size": "xl",
+              "align": "center",
+              "weight": "bold"
+            },
+            {
+              "type": "text",
+              "text": "[ ใบเตย | ชานม | สังขยาไข่ | รวม ]",
+              "size": "sm",
+              "align": "center",
+              "color": "#613A28"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "80฿",
+                      "flex": 0,
+                      "margin": "sm",
+                      "weight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "text": "6ลูก",
+                      "size": "sm",
+                      "align": "end",
+                      "color": "#AAAAAA"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
+              "size": "xxs",
+              "color": "#AAAAAA",
+              "wrap": true
+            }
+          ]
+        }
+      },
       {
         "type": "bubble",
         "hero": {
@@ -205,76 +275,6 @@
             {
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
-              "size": "xxs",
-              "color": "#AAAAAA",
-              "wrap": true
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://static.wixstatic.com/media/e5c721_aa4c0873eeea46af94b4b7bf302464e9~mv2.jpg",
-          "size": "full",
-          "aspectRatio": "1:1",
-          "aspectMode": "cover",
-          "action": {
-            "type": "uri",
-            "label": "Action",
-            "uri": "https://linecorp.com"
-          }
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "md",
-          "contents": [
-            {
-              "type": "text",
-              "text": "'ปังหยา",
-              "size": "xl",
-              "align": "center",
-              "weight": "bold"
-            },
-            {
-              "type": "text",
-              "text": "[ ใบเตย | ชานม | สังขยาไข่ | รวม ]",
-              "size": "sm",
-              "align": "center",
-              "color": "#613A28"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "80฿",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "6ลูก",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
               "size": "xxs",
               "color": "#AAAAAA",
               "wrap": true
@@ -459,64 +459,6 @@
         "type": "bubble",
         "hero": {
           "type": "image",
-          "url": "https://static.wixstatic.com/media/e5c721_321fad5b516d47628884151bc43379ac~mv2.jpeg",
-          "size": "full",
-          "aspectRatio": "1:1",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "md",
-          "contents": [
-            {
-              "type": "text",
-              "text": "ชิฟฟ่อนมะพร้าว",
-              "size": "xl",
-              "align": "center",
-              "weight": "bold"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "฿100",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "6ชิ้น",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
-              "size": "xxs",
-              "color": "#AAAAAA",
-              "wrap": true
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
           "url": "https://static.wixstatic.com/media/e5c721_6480a056cf564d7f94b2d00e144233a2~mv2.jpg",
           "size": "full",
           "aspectRatio": "1:1",
@@ -553,6 +495,64 @@
                     {
                       "type": "text",
                       "text": "1กล่อง",
+                      "size": "sm",
+                      "align": "end",
+                      "color": "#AAAAAA"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
+              "size": "xxs",
+              "color": "#AAAAAA",
+              "wrap": true
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://static.wixstatic.com/media/e5c721_321fad5b516d47628884151bc43379ac~mv2.jpeg",
+          "size": "full",
+          "aspectRatio": "1:1",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "md",
+          "contents": [
+            {
+              "type": "text",
+              "text": "ชิฟฟ่อนมะพร้าว",
+              "size": "xl",
+              "align": "center",
+              "weight": "bold"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "฿100",
+                      "flex": 0,
+                      "margin": "sm",
+                      "weight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "text": "6ชิ้น",
                       "size": "sm",
                       "align": "end",
                       "color": "#AAAAAA"
@@ -642,7 +642,7 @@
         ])
         
         //  setTimeout(function(){alert("HI")},3000)
-       closed() 
+       //closed() 
       }
     }
 
@@ -651,7 +651,7 @@
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
          // getContext()
-          //sendMsg()
+          sendMsg()
         } else {
           liff.login()
         }
