@@ -10,7 +10,7 @@
   </script>-->
 </head>
 <body>
-  <button id="btnMsg" onclick="sendMsg()">ส่ง</button>  
+  <button id="btnMsg" onclick="sendMsg()">ส่ง..</button>  
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function logOut() {
@@ -27,7 +27,7 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       // start flex
-    {
+   {
   "type": "flex",
   "altText": "Flex Message",
   "contents": {
@@ -199,111 +199,6 @@
               "size": "xxs",
               "color": "#AAAAAA",
               "wrap": true
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://static.wixstatic.com/media/e5c721_b1ecccbea95449c9830cd9dbc91ce1fa~mv2.jpg",
-          "size": "full",
-          "aspectRatio": "1:1",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "md",
-          "contents": [
-            {
-              "type": "text",
-              "text": "นูเทลล่าบราวนี่",
-              "size": "xl",
-              "weight": "bold"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "icon",
-                      "url": "https://gwangraindear.github.io/LiffMENU1/img/size-s.png"
-                    },
-                    {
-                      "type": "text",
-                      "text": "฿65",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "100g",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                },
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "icon",
-                      "url": "https://gwangraindear.github.io/LiffMENU1/img/size-m.png"
-                    },
-                    {
-                      "type": "text",
-                      "text": "฿250",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "400g",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "🚗 สามารถจัดส่งได้ทั่วประเทศ",
-              "size": "xxs",
-              "color": "#AAAAAA",
-              "wrap": true
-            }
-          ]
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "spacer",
-              "size": "xxl"
-            },
-            {
-              "type": "button",
-              "action": {
-                "type": "message",
-                "label": "More",
-                "text": "เอาใจสาย Chocolate Lover บราวนี่หน้ากรอบ เนื้อในหนึบหนับ เข้มข้นไปด้วย Nutella ช็อกโกแลต ผสม เฮเซลนัท"
-              },
-              "color": "#905C44",
-              "style": "primary"
             }
           ]
         }
