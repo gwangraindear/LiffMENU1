@@ -23,7 +23,7 @@
     }
 
     async function sendMsg() {
-      alert("Message sent") 
+     // alert("Message sent") 
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       // start flex
@@ -647,10 +647,10 @@
 
     async function main() {
       await liff.init({ liffId: "1654167548-NvyrPjaE" })
-      alert("main") 
+      //alert("main") 
         if (liff.isLoggedIn()) {
          // getContext()
-          alert("is log in")
+         // alert("is log in")
           setTimeout(sendMsg(),3000)
           
         } else {
